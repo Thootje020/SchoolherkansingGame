@@ -104,6 +104,16 @@ fun main (args: Array<String>) {
         }
         println(player)
 
+        println("you walk out of school with a sense of accomplishment")
+        Thread.sleep(1000)
+        println("you wait for the bus")
+        Thread.sleep(1000)
+        println("you say to yourself  i must get a 10 for what you have done")
+        Thread.sleep(1000)
+        println("the police arrives")
+        Thread.sleep(1000)
+        println("you are sentenced 25 years in jail")
+
 
 
     } else {
