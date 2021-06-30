@@ -35,6 +35,7 @@ fun main (args: Array<String>) {
         println("you tell him that you already tried")
         Thread.sleep(1000)
         println("the teacher tries to walk away but you raise your mighty fist")
+
         val Ron = Ron("Ron", 5)
         println(Ron)
         while(Ron.maxHitpoints > 0) {
@@ -46,12 +47,23 @@ fun main (args: Array<String>) {
             Thread.sleep(500)
             println("Press 3 scream")
 
+
             choice = readLine().toString()
             if (Ron.maxHitpoints > 0 && choice == "1" || choice == "2" || choice == "3") {
                 Ron.attack(player, 0, 2)
             }
-        }
+            when(choice) {
+                "1" -> player.attack(Ron, player.weapon.minDamage, player.weapon.maxDamage)
+                "2" -> player.attack(Ron, player.weapon.minDamage, player.weapon.maxDamage)
+                "3" -> println("Aaaaaaaaaaaaaaaaa")
+                else -> {
+                    println("No valid input detected ")
 
+                }
+            }
+
+        }
+        println(player)
 
 
 
