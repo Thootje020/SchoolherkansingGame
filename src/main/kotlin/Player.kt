@@ -11,7 +11,6 @@ class Player(name: String, override var maxHitpoints: Int = 10, var hitpoints: I
         } else {
             println("$name is alive")
         }
-
     }
 
     override fun takeDamage(damage: Int) {
