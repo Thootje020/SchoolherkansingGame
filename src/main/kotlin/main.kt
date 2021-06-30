@@ -65,6 +65,55 @@ fun main (args: Array<String>) {
         }
         println(player)
 
+        println("Shane walks up to you and ask what you are doing.")
+        Thread.sleep(1000)
+        println("you tell him that he was being mean and he got what he deserved")
+        Thread.sleep(1000)
+        println("shane isnt happy")
+        Thread.sleep(1000)
+        println("you raise your mighty fist")
+        var player = Player("")
+        var choice : String = ""
+
+        val Shane = Shane("Shane", 3)
+        println(Shane)
+        while(Shane.maxHitpoints > 0) {
+            println("What do you want to do?")
+            Thread.sleep(500)
+            println("Press 1 to Hit with your fists")
+            Thread.sleep(500)
+            println("Press 2 to kick")
+            Thread.sleep(500)
+            println("Press 3 scream")
+
+
+            choice = readLine().toString()
+            if (Shane.maxHitpoints > 0 && choice == "1" || choice == "2" || choice == "3") {
+                Shane.attack(player, 0, 2)
+            }
+            when(choice) {
+                "1" -> player.attack(Shane, player.weapon.minDamage, player.weapon.maxDamage)
+                "2" -> player.attack(Shane, player.weapon.minDamage, player.weapon.maxDamage)
+                "3" -> println("Aaaaaaaaaaaaaaaaa")
+                else -> {
+                    println("No valid input detected ")
+
+                }
+            }
+
+        }
+        println(player)
+
+        println("you walk out of school with a sense of accomplishment")
+        Thread.sleep(1000)
+        println("you wait for the bus")
+        Thread.sleep(1000)
+        println("you say to yourself  i must get a 10 for what you have done")
+        Thread.sleep(1000)
+        println("the police arrives")
+        Thread.sleep(1000)
+        println("you are sentenced 25 years in jail")
+
 
 
     } else {
@@ -79,35 +128,93 @@ fun main (args: Array<String>) {
         println("he tells you that its not enough and if you dont work harder he will suspend you.")
         Thread.sleep(1000)
         println("you raise your mighty fist.")
-        //Start fight
+
+
+        val Ron = Ron("Ron", 5)
+        println(Ron)
+        while(Ron.maxHitpoints > 0) {
+            println("What do you want to do?")
+            Thread.sleep(500)
+            println("Press 1 to Hit with your fists")
+            Thread.sleep(500)
+            println("Press 2 to kick")
+            Thread.sleep(500)
+            println("Press 3 scream")
+
+
+            choice = readLine().toString()
+            if (Ron.maxHitpoints > 0 && choice == "1" || choice == "2" || choice == "3") {
+                Ron.attack(player, 0, 2)
+            }
+            when(choice) {
+                "1" -> player.attack(Ron, player.weapon.minDamage, player.weapon.maxDamage)
+                "2" -> player.attack(Ron, player.weapon.minDamage, player.weapon.maxDamage)
+                "3" -> println("Aaaaaaaaaaaaaaaaa")
+                else -> {
+                    println("No valid input detected ")
+
+                }
+            }
+
+        }
+        println(player)
+
+        println("Shane walks up to you and ask what you are doing.")
+        Thread.sleep(1000)
+        println("you tell him that he was being mean and he got what he deserved")
+        Thread.sleep(1000)
+        println("shane isnt happy")
+        Thread.sleep(1000)
+        println("you raise your mighty fist")
+        var player = Player("")
+        var choice : String = ""
+
+        val Shane = Shane("Shane", 3)
+        println(Shane)
+        while(Shane.maxHitpoints > 0) {
+            println("What do you want to do?")
+            Thread.sleep(500)
+            println("Press 1 to Hit with your fists")
+            Thread.sleep(500)
+            println("Press 2 to kick")
+            Thread.sleep(500)
+            println("Press 3 scream")
+
+
+            choice = readLine().toString()
+            if (Shane.maxHitpoints > 0 && choice == "1" || choice == "2" || choice == "3") {
+                Shane.attack(player, 0, 2)
+            }
+            when(choice) {
+                "1" -> player.attack(Shane, player.weapon.minDamage, player.weapon.maxDamage)
+                "2" -> player.attack(Shane, player.weapon.minDamage, player.weapon.maxDamage)
+                "3" -> println("Aaaaaaaaaaaaaaaaa")
+                else -> {
+                    println("No valid input detected ")
+
+                }
+            }
+
+        }
+        println(player)
+
+        println("you walk out of school with a sense of accomplishment")
+        Thread.sleep(1000)
+        println("you wait for the bus")
+        Thread.sleep(1000)
+        println("you say to yourself  i must get a 10 for what you have done")
+        Thread.sleep(1000)
+        println("the police arrives")
+        Thread.sleep(1000)
+        println("you are sentenced 25 years in jail")
     }
 
 
 
 }
 
-fun level2() {
-    println("Shane walks up to you and ask what you are doing.")
-    Thread.sleep(1000)
-    println("you tell him that he was being mean and he got what he deserved")
-    Thread.sleep(1000)
-    println("shane isnt happy")
-    Thread.sleep(1000)
-    println("you raise your mighty fist")
-}
 
-fun outro() {
-    println("you walk out of school with a sense of accomplishment")
-    Thread.sleep(1000)
-    println("you wait for the bus")
-    Thread.sleep(1000)
-    println("you say to yourself  i must get a 10 for what you have done")
-    Thread.sleep(1000)
-    println("the police arrives")
-    Thread.sleep(1000)
-    println("you are sentenced 25 years in jail")
 
-}
 
 
 fun died(){
