@@ -10,7 +10,16 @@ fun main (args: Array<String>) {
         println("enter a valid username")
         username = readLine()
     }
-        println("Welcome," + player)
+
+    println("Welcome," + player)
+    val startGame = (1..2).random();
+    if (startGame == 1) {
+        startLevel1A()
+        //Start Level1A
+    } else {
+        startLevel1B()
+        //Start Level1B
+    }
 
 
 

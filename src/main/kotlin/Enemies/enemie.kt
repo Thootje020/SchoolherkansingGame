@@ -17,7 +17,3 @@ public fun attackRon() {
     }
 }
 
-public fun takeDamageShane() {
-}
-public fun takeDamageRon() {
-}
