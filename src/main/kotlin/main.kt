@@ -1,10 +1,11 @@
 import kotlin.concurrent.thread
 import kotlin.system.exitProcess
+
 fun main (args: Array<String>) {
     println("Welcome to our game \n Enter your username")
 
     var player = Player("")
-
+    var choice : String = ""
     var username = readLine()
     player = Player("$username")
     while (username!!.isBlank()) {
@@ -34,7 +35,23 @@ fun main (args: Array<String>) {
         println("you tell him that you already tried")
         Thread.sleep(1000)
         println("the teacher tries to walk away but you raise your mighty fist")
-        //Start fight
+        val Ron = Ron("Ron", 5)
+        println(Ron)
+        while(Ron.maxHitpoints > 0) {
+            println("What do you want to do?")
+            Thread.sleep(500)
+            println("Press 1 to Hit with your fists")
+            Thread.sleep(500)
+            println("Press 2 to kick")
+            Thread.sleep(500)
+            println("Press 3 scream")
+
+            choice = readLine().toString()
+            if (Ron.maxHitpoints > 0 && choice == "1" || choice == "2" || choice == "3") {
+                Ron.attack(player, 0, 2)
+            }
+        }
+
 
 
 
