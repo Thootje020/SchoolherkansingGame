@@ -2,7 +2,6 @@ import kotlin.io.println as println
 
 class Player(name: String, override var maxHitpoints: Int = 10, var hitpoints: Int = maxHitpoints) :
     Characters (name, maxHitpoints){
-    val inventory = ArrayList<Loot>()
     var weapon = Weapons("Fists", 1, 2)
 
     fun show() {
